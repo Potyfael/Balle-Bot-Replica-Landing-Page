@@ -1,0 +1,125 @@
+
+
+:root {
+    --main-bg-color: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+    --primary-font-color: #FFF2E7;
+    --secondary-font-color: #ECD6C4;
+    --destak-font: 'Righteous';
+    --standard-font: 'Sarala';
+
+}
+
+body {
+    background-image: var(--main-bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+header > nav > a {
+    color: var(--primary-font-color);
+    font-family: var(--standard-font);
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-top: 0.2px solid rgba(255, 242, 231, 0.535);
+    padding: 100px 0px 20px 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+
+#primary-content {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+
+#primary-content > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#primary-content > div > h1{
+    font-family: var(--destak-font);
+    color: var(--primary-font-color);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+#primary-content > div > h2 {
+    font-family: var(--standard-font);
+    font-size: 24px;
+    color: var(--secondary-font-color);
+}
+
+button {
+    background-color: var(--secondary-font-color);
+    width: 185px;
+    height: 67px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+
+    color: #2F2325;
+    font-family: var(--secondary-font-color);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#second-content {
+    padding: 50px 0px;
+    margin: 23px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 0.2px solid rgba(255, 242, 231, 0.535);
+}
+
+#second-content > h3 {
+    padding-top: 50px;
+    border-top: 0.2px solid rgba(255, 242, 231, 0.535);
+    font-family: var(--destak-font);
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--primary-font-color);
+}
+
+#second-content > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#second-content > ol > li {
+    color: var(--secondary-font-color);
+    font-family: var(--standard-font);
+    font-size: 18px;
+}
+
+
+footer {
+    display: block;
+    margin: auto;
+}
